@@ -1,0 +1,6 @@
+<!-- BEGIN main_block -->
+<div style='text-align:center;'>
+	<p>{MESSAGE}</p>
+	<p><a href="{LINK}">{BACK}</a></p>
+</div>
+<!-- END main_block -->

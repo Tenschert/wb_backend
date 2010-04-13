@@ -1,0 +1,127 @@
+<!-- BEGIN main_block -->
+
+<form name="details" action="details.php" method="post">
+
+<table cellpadding="5" cellspacing="0" border="0" width="100%">
+<tr>
+	<td colspan="2"><h2>{HEADING_MY_SETTINGS}</h2></td>
+</tr>
+<tr>
+	<td width="160">{TEXT_DISPLAY_NAME}:</td>
+	<td>
+		<input type="text" name="display_name" value="{DISPLAY_NAME}" style="width: 98%;" />
+		<script type="text/javascript">
+		document.details.display_name.focus();
+		</script>
+	</td>
+</tr>
+<tr>
+	<td>{TEXT_LANGUAGE}:</td>
+	<td>
+		<select name="language" style="width: 98%;">
+			<!-- BEGIN language_list_block -->
+			<option value="{CODE}"{SELECTED} style="background: url({FLAG}.png) no-repeat center left; padding-left: 20px;">{NAME} ({CODE})</option>
+			<!-- END language_list_block -->
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>{TEXT_TIMEZONE}:</td>
+	<td>
+		<select name="timezone" style="width: 98%;">
+			<option value="-20">{TEXT_PLEASE_SELECT}...</option>
+			<!-- BEGIN timezone_list_block -->
+				<option value="{VALUE}" {SELECTED}>{NAME}</option>
+			<!-- END timezone_list_block -->
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>{TEXT_DATE_FORMAT}:</td>
+	<td>
+		<select name="date_format" style="width: 98%;">
+			<option value="">{TEXT_PLEASE_SELECT}...</option>
+			<!-- BEGIN date_format_list_block -->
+				<option value="{VALUE}" {SELECTED}>{NAME}</option>
+			<!-- END date_format_list_block -->
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>{TEXT_TIME_FORMAT}:</td>
+	<td>
+		<select name="time_format" style="width: 98%;">
+			<option value="">{TEXT_PLEASE_SELECT}...</option>
+			<!-- BEGIN time_format_list_block -->
+				<option value="{VALUE}" {SELECTED}>{NAME}</option>
+			<!-- END time_format_list_block -->
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>
+		<input type="submit" name="submit" value="{TEXT_SAVE}" />
+		<input type="reset" name="reset" value="{TEXT_RESET}" />
+	</td>
+</tr>
+</table>
+
+</form>
+
+<form name="email" action="email.php" method="post">
+
+<table cellpadding="5" cellspacing="0" border="0" width="100%">
+<tr>
+	<td colspan="2"><h2>{HEADING_MY_EMAIL}</h2></td>
+</tr>
+<tr>
+	<td width="160">{TEXT_CURRENT_PASSWORD}:</td>
+	<td><input type="password" name="current_password" style="width: 98%;" /></td>
+</tr>
+<tr>
+	<td>{TEXT_EMAIL}:</td>
+	<td><input type="text" name="email" value="{EMAIL}" style="width: 98%;" /></td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>
+		<input type="submit" name="submit" value="{TEXT_SAVE}" />
+		<input type="reset" name="reset" value="{TEXT_RESET}" />
+	</td>
+</tr>
+</table>
+
+</form>
+
+<form name="password" action="password.php" method="post">
+
+<table cellpadding="5" cellspacing="0" border="0" width="100%">
+<tr>
+	<td colspan="2"><h2>{HEADING_MY_PASSWORD}</h2></td>
+</tr>
+<tr>
+	<td width="160">{TEXT_CURRENT_PASSWORD}:</td>
+	<td><input type="password" name="current_password" style="width: 98%;" /></td>
+</tr>
+<tr>
+	<td width="160">{TEXT_NEW_PASSWORD}:</td>
+	<td><input type="password" name="new_password" style="width: 98%;" /></td>
+</tr>
+<tr>
+	<td width="160">{TEXT_RETYPE_NEW_PASSWORD}:</td>
+	<td><input type="password" name="new_password2" style="width: 98%;" /></td>
+</tr>
+
+<tr>
+	<td>&nbsp;</td>
+	<td>
+		<input type="submit" name="submit" value="{TEXT_SAVE}" />
+		<input type="reset" name="reset" value="{TEXT_RESET}" />
+	</td>
+</tr>
+</table>
+
+</form>
+
+<!-- END main_block -->

@@ -1,0 +1,81 @@
+<!-- BEGIN main_block -->
+
+<table cellpadding="0" cellspacing="0" border="0" width="99%" align="center">
+  <tr>
+    <td colspan="3">{WELCOME_MESSAGE}. {CURRENT_USER} {DISPLAY_NAME}. </td>
+  </tr>
+  <tr style="{DISPLAY_WARNING};">
+    <td colspan="3" align="center" style="color: #FF0000; font-weight: bold;">{WARNING}</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="49%">
+      <table cellpadding="0" cellspacing="0" border="0" class="section" style="{DISPLAY_PAGES};">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"> <a href="{ADMIN_URL}/pages/index.php"> <img src="{THEME_URL}/icons/pages.png" border="0" alt="" /> </a> </td>
+          <td class="description" valign="top"><div class="title"><a href="{ADMIN_URL}/pages/index.php">{PAGES}</a></div>
+		  {PAGES_OVERVIEW}
+		  </td>
+        </tr>
+
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" class="section" style="{DISPLAY_ADDONS};">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"> <a href="{ADMIN_URL}/addons/index.php"> <img src="{THEME_URL}/icons/addons.png" border="0" alt="" /> </a> </td>
+          <td class="description" valign="top"><div class="title"><a href="{ADMIN_URL}/addons/index.php">{ADDONS}</a></div>
+		  {ADDONS_OVERVIEW}
+		  </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" class="section" style="{DISPLAY_SETTINGS};">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"> <a href="{ADMIN_URL}/settings/index.php"> <img src="{THEME_URL}/icons/settings.png" border="0" alt="" /> </a> </td>
+          <td class="description" valign="top"><div class="title"><a href="{ADMIN_URL}/settings/index.php">{SETTINGS}</a></div>
+		  {SETTINGS_OVERVIEW}
+		  </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" class="section" style="{DISPLAY_ACCESS};">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"> <a href="{ADMIN_URL}/access/index.php"> <img src="{THEME_URL}/icons/access.png" border="0" alt="" /> </a> </td>
+          <td class="description" valign="top"><div class="title"><a href="{ADMIN_URL}/access/index.php">{ACCESS}</a></div>
+		  {ACCESS_OVERVIEW}
+		  </td>
+        </tr>
+      </table>
+    </td>
+    <td width="10">&nbsp; </td>
+    <td align="center" valign="top">
+	  <table cellpadding="0" cellspacing="0" border="0" class="section" style="{DISPLAY_MEDIA};">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"> <a href="{ADMIN_URL}/media/index.php"> <img src="{THEME_URL}/icons/media.png" border="0" alt="" /> </a> </td>
+          <td class="description" valign="top"><div class="title"><a href="{ADMIN_URL}/media/index.php">{MEDIA}</a></div>
+		  {MEDIA_OVERVIEW}
+		  </td>
+        </tr>
+      </table>	  
+      <table cellpadding="0" cellspacing="0" border="0" class="section">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"> <a href="{ADMIN_URL}/preferences/index.php"> <img src="{THEME_URL}/icons/preferences.png" border="0" alt="" /> </a> </td>
+          <td class="description" valign="top"><div class="title"><a href="{ADMIN_URL}/preferences/index.php">{PREFERENCES}</a></div>
+		  {PREFERENCES_OVERVIEW}
+		  </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" class="section" style="{DISPLAY_ADMINTOOLS};">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"> <a href="{ADMIN_URL}/admintools/index.php"> <img src="{THEME_URL}/icons/admintools.png" border="0" alt="" /> </a> </td>
+          <td class="description" valign="top"><div class="title"><a href="{ADMIN_URL}/admintools/index.php">{ADMINTOOLS}</a></div>
+		  {ADMINTOOLS_OVERVIEW}
+		  </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" class="rss" style="{DISPLAY_RSS};">
+        <tr>
+          <td class="graphic" align="center" valign="middle" rowspan="2"><img src="{THEME_URL}/icons/rss.png" border="0" alt="" /></td>
+          <td class="description" valign="top"><div class="title">{RSS_TITLE}</div><ul>{RSS}</ul></td>
+        </tr>
+      </table>
+<!-- END main_block -->

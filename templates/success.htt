@@ -1,0 +1,16 @@
+<!-- BEGIN main_block -->
+<center>
+	
+	{MESSAGE}
+	
+	<script type="text/javascript">
+		setTimeout("location.href='{REDIRECT}'", {REDIRECT_TIMER});
+	</script>
+	
+	<noscript>
+		<br /><br />
+		<a href="{REDIRECT}">{NEXT}</a>
+	</noscript>
+	
+</center>
+<!-- END main_block -->
